@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">      
+        <nav>
+            <h1>ODIN PROJECT BOOK LIBRARY</h1>
+            <button class="addnew-button" data-model-targer ="#newForm"><i class="bi bi-file-plus"></i>Add Book </button>        
+        </nav>   
+    </header>
+        <form class="newForm" id="newForm">
+            <h2>Add New Book </h2>
+            <input 
+            id="title"
+            type="text" 
+            placeholder="Title"
+            required
+            />
+            <input 
+            id="author"
+            type="text"
+            placeholder="Author"    
+            required
+            />
+            <input
+            id="pages" 
+            type="number" 
+            placeholder="Pages"     
+            required
+            max="10000"
+            />
+            <div class="is-read">
+                <label for="is-read" class="have">Have you read it?</label>
+                <input class="isread" type="checkbox" id="isRead" />
+            </div>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    <div  id="overlay"></div>
+
+    <div class="container" id="book">
+       
+    </div>
+        
+
+
+
+    <footer class="footer">
+        <p>
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            Lemlem
+          </p>
+          <a href="https://github.com/Lemlem-yo" target="_blank"><i class="bi bi-github"></i>
+          </a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
